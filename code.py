@@ -4,9 +4,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-from bokeh.plotting import figure, show
-from bokeh.io import output_notebook
-from bokeh.tile_providers import CARTODBPOSITRON, get_provider
+#from bokeh.plotting import figure, show
+#from bokeh.io import output_notebook
+#from bokeh.tile_providers import CARTODBPOSITRON, get_provider
 # output_notebook()
 
 st.title('Covid 19 Dashboard')
@@ -41,9 +41,9 @@ df_ny = pd.DataFrame({
 
 
 # if you don't have bokeh installed, you can comment these out.
-p = figure(plot_width=800, plot_height=400, x_axis_type='datetime')
-p.line(df_ca['date'], df_ca['cases'], line_width=4, color='blue', alpha=0.3)
-p.line(df_ny['date'], df_ny['cases'], line_width=4, color='red', alpha=0.3)
+#p = figure(plot_width=800, plot_height=400, x_axis_type='datetime')
+#p.line(df_ca['date'], df_ca['cases'], line_width=4, color='blue', alpha=0.3)
+#p.line(df_ny['date'], df_ny['cases'], line_width=4, color='red', alpha=0.3)
 # p.line(ny['Date'], ny['Cases'], line_width=4, color='red')
-st.bokeh_chart(p, use_container_width=True)
+#st.bokeh_chart(p, use_container_width=True)
 
