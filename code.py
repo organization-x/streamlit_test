@@ -11,7 +11,9 @@ from bokeh.tile_providers import CARTODBPOSITRON, get_provider
 
 st.title('Covid 19 Dashboard')
 
-df_usconf = pd.read_csv('covid19.csv')
+df_usconf = pd.read_csv('covid19_small.csv')
+#df_usconf = df_usconf[df_usconf['Province'].isin(['California', 'New York'])]
+#df_usconf.to_csv('covid19_small.csv')
 
 ca = df_usconf[df_usconf['Province'] == 'California']
 ny = df_usconf[df_usconf['Province'] == 'New York']
