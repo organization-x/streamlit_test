@@ -28,7 +28,7 @@ st.text('plot using streamlit line chart')
 st.line_chart(ca.Cases)
 st.line_chart(ny.Cases)
 
-st.text('plot using bokeh')
+# st.text('plot using bokeh')
 df_ca = pd.DataFrame({
     'date': pd.to_datetime(ca.Date),
     'cases': ca.Cases
